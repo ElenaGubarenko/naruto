@@ -5,7 +5,7 @@ import React, { Component } from 'react';
 
 function App() {
   return (
-    <div className="App">\
+    <div className="App">
       <Game></Game>
       {/* <PhaserComponent></PhaserComponent> */}
       {/* <GameScene></GameScene> */}
