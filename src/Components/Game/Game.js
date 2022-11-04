@@ -4,26 +4,37 @@ import React, { Component } from 'react';
 import testImage from '../../Components/testImage.png'
 
 function Game() {
-    const game = new Phaser.Game({
-        // ...configs,
-        parent: 'game-content',
-        height: 576,
-        width: 1024,
-        type: Phaser.AUTO,
+    const config = {
+        type: Phaser.WEBGL,
+        width: 640,
+        height: 480,
+        backgroundColor: "black",
+        parent: 'phaser-example',
         scene: {
-            init: function () { },
-            preload: function () {
-                this.load.image('testImage', testImage)
-                this.add.image(0, 0, "testImage")
-            }
+            preload: preload,
+            create: create,
+            update: update
         }
-    })
+    };
+
+    const game = new Phaser.Game(config);
+
+    function preload() {
+        this.load.image('testImage', testImage)
+    }
+
+    function create() {
+        this.add.image(100, 100, "testImage").setScale(0.03);
+    }
+
+    function update() {
+    }
+
 
 
     return (
         <div className="Game">
             Game
-
         </div>
     );
 }
