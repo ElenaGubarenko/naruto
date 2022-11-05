@@ -1,26 +1,14 @@
 // import PhaserComponent from "./Components/PhaserComponent"
 // import GameScene from './Components/GameScene'
-import Game from './Components/Game'
-import React, { useState, useEffect } from 'react';
+import Game from "./Components/Game";
+import React, { useState, useEffect } from "react";
 
 function App() {
-  const [loaded, setLoaded] = useState(false)
-  // console.log(loaded);
-  useEffect(() => {
-    console.log("!!!!!!!!")
-    // setLoaded(true)
-  }, []);
-
-  console.log(loaded);
-
   return (
     <div>
-      <div className="App">
-        Hello
-      </div>
+      <div className="App">Hello</div>
       <Game></Game>
     </div>
-
   );
 }
 
