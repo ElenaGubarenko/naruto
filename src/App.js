@@ -7,19 +7,18 @@ function App() {
   const [loaded, setLoaded] = useState(false)
   // console.log(loaded);
   useEffect(() => {
-    console.log("!!!!!!!!")
+    // console.log("!!!!!!!!")
     // setLoaded(true)
   }, []);
 
-  console.log(loaded);
 
   return (
     <div>
       <div className="App">
-        Hello
+        {/* Hello */}
       </div>
-      <Game></Game>
-    </div>
+      {/* <Game></Game> */}
+    </div >
 
   );
 }
